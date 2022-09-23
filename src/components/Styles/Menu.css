@@ -37,7 +37,7 @@
 
 .menu {
     z-index: 999;
-    margin: 0;
+    margin: 0 ;
     padding: 0;
     width: 0;
     overflow: hidden;
@@ -50,11 +50,11 @@
 
 .menu li {
     list-style: none;
-    margin:10px;
+    margin: 10px;
 }
 
 .menu li a {
-    padding: 10px;
+    padding: 20px;
     text-decoration: none;
     color: #666;
     text-transform: uppercase;
@@ -63,7 +63,7 @@
 }
 
 .menu li a:hover {
-    color: #161919;
+    color: #00ff00;
 }
 
 .nav input {
@@ -105,3 +105,11 @@
 .nav input:checked ~ span:nth-child(3) {
     transform: translateY(0) rotate(45deg);
 }
+
+@media (max-width: 768px){
+    .menu li a {
+        font-size: 10px;
+        padding: 8px;
+    }
+}
+    
